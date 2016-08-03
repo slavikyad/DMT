@@ -39,5 +39,11 @@ import flash.geom.Rectangle;
 			this.pivotY = m_pivots[this.currentFrame].y;
 			readjustSize();
 		}
+		
+		override public function reverseFrames():void
+		{
+			m_pivots.reverse();
+			super.reverseFrames();
+		}
 	}
 }
